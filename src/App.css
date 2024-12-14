@@ -1,0 +1,249 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.grid-container {
+  display: grid;
+}
+
+.main {
+  padding: 10%;
+  border-radius: 4px;
+  background-repeat: repeat;
+}
+
+.app-container {
+  border-radius: 10px;
+  height: 100%;
+  display: flex;
+  background-image: url('./images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.abhay{
+  font-size: 2em;
+  font: bold;
+}
+.largername{
+  font-size: 1.5em;
+  font: bold;
+}
+
+
+.small-text {
+  font-size: 0.8em;  /* Adjust the size as needed */
+  color: #555; /* Optional: change color */
+}
+
+.input-upload-box {
+  width: 60%; /* Decrease width by 40% */
+  height: 50px; /* Increase height */
+  padding: 10px; /* Optional: Add padding for better spacing */
+  border: 1px solid #ccc; /* Optional: Border for better visibility */
+  border-radius: 5px; /* Optional: Rounded corners */
+  
+}
+
+
+.sidebar {
+  width: 20%;
+  background: #e0f7fa;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Push content to top and bottom */
+  padding: 20px;
+  box-sizing: border-box;
+}
+/* 
+.sidebar-image-wrapper {
+  padding: 0 8px 8px; /* Padding on left, right, and bottom */
+  /* text-align: center;} */
+ */
+
+.sidebar-image {
+  width: 100%;
+  max-width: auto ;
+  height: auto;
+  border-radius: 5px; /* Optional: Add slight rounding to image corners */
+}
+
+.main-content {
+  flex: 1;
+  background: #f5f5f5;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.content-container {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  max-width: 900px;
+  max-height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+  height: 80%;
+}
+
+.claim-section {
+  width: 100%;
+  margin: 20px 0;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.claim-section h2 {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 24px;
+}
+
+.claim-section p {
+  margin-bottom: 20px;
+  color: #777;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+label {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+input,
+select,
+textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+.upload-section {
+  margin: 20px 0;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: grid;
+  gap: 20px;
+}
+
+.upload-section h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+  text-align: center;
+}
+
+.upload-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.upload-box {
+  border: 2px dashed #ccc;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  background: #f9f9f9;
+  transition: background-color 0.3s ease;
+}
+
+.upload-box:hover {
+  background-color: #e0f7fa;
+}
+
+.upload-box p {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.input-upload-box {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.btn {
+  padding: 12px 25px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Adjustments for Medium Screens */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 25%;
+  }
+
+  .content-container {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .upload-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Adjustments for Small Screens */
+@media (max-width: 480px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .main-content {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .upload-box {
+    padding: 15px;
+  }
+
+  .btn {
+    padding: 8px 15px;
+  }
+}

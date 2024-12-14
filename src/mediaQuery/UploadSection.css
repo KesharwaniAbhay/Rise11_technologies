@@ -1,0 +1,43 @@
+.upload-section {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .upload-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .upload-box input {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  p {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .upload-box {
+    margin-bottom: 20px;
+  }
+  
+  /* Media query for mobile devices */
+  @media screen and (max-width: 768px) {
+    .upload-grid {
+      grid-template-columns: 1fr; /* Stack form fields vertically */
+    }
+  
+    .upload-box input {
+      font-size: 12px;
+      padding: 6px;
+    }
+  
+    p {
+      font-size: 12px;
+    }
+  }
+  

@@ -1,0 +1,47 @@
+/* Sidebar container */
+.sidebar {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Sidebar title */
+  .sidebar-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  /* Menu List */
+  .sidebar .MuiListItem-root {
+    padding: 10px 0;
+  }
+  
+  .sidebar .MuiListItemText-root {
+    font-size: 14px;
+  }
+  
+  /* Image Box */
+  .sidebar-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: Rounded corners for the image */
+  }
+  
+  /* Media query for mobile devices */
+  @media screen and (max-width: 768px) {
+    .sidebar {
+      padding: 10px; /* Reduce padding for mobile */
+    }
+  
+    .sidebar-title {
+      font-size: 1.2rem; /* Smaller title font size on mobile */
+    }
+  
+    .sidebar .MuiListItemText-root {
+      font-size: 12px; /* Smaller font size for list items */
+    }
+  
+    .sidebar-image {
+      max-width: 80%; /* Adjust image size for smaller screens */
+    }
+  }
+  
