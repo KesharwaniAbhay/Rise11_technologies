@@ -55,6 +55,3 @@ http://localhost:3000
 Open this URL in your browser to view the app.
 
 
-## This project is also uploaded in the Verceal
-
--**link:--** 
